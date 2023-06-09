@@ -41,5 +41,5 @@ const zipQuasarBuild = async (input, fileName, quasarMode) => {
 }
 
 module.exports = {
-  zip
+  zipQuasarBuild
 }
