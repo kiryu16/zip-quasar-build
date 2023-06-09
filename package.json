@@ -1,10 +1,14 @@
 {
   "name": "zip-quasar-build",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zip the quasar build folder",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:kiryu16/zip-quasar-build"
   },
   "author": "Emmanuel Hernandez <emmanuelhdzg@gmail.com>",
   "license": "ISC",
