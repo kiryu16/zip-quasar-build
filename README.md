@@ -41,7 +41,7 @@ afterBuild({ quasarConf }) {
   zipQuasarBuild({
     input: quasarConf.build.distDir,
     fileName: 'zip-name',
-    quasarMode: quasarConf.ctx.modeName
+    quasarMode: quasarConf.ctx.modeName,
     openFE: true
   })
 }
