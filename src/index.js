@@ -53,6 +53,6 @@ const zipQuasarBuild = async ({ input, fileName, quasarMode, openFE }) => {
   }
 }
 
-export {
+return {
   zipQuasarBuild
 }
