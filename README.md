@@ -24,15 +24,26 @@ At the beginning of the quasar.conf file import the library
 const { zipQuasarBuild } = require("zip-quasar-build");
 ```
 
-The zipQuasarBuild function accepts 3 parameters; path of the folder to compress, zip name and quasar mode.
+or in module type
 
-la función zipQuasarBuild debe ser agregada dentro del parametro afterBuild que se encuentra dentro de build en el objeto de configuración de quasar.conf.
+```js
+import { zipQuasarBuild } from "zip-quasar-build";
+```
+
+The zipQuasarBuild function accepts an object with 4 parameters; path of the folder to compress, zip name, quasar mode and open file explorer.
+
+The zipQuasarBuild function must be added inside the afterBuild parameter found inside build in the quasar.conf configuration object.
 
 Example:
 
 ```js
 afterBuild({ quasarConf }) {
-  zipQuasarBuild(quasarConf.build.distDir, 'zip-name', quasarConf.ctx.modeName)
+  zipQuasarBuild({
+    input: quasarConf.build.distDir,
+    fileName: 'zip-name',
+    quasarMode: quasarConf.ctx.modeName
+    openFE: true
+  })
 }
 ```
 
